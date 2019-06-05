@@ -8,9 +8,19 @@ user_choice = input("Please select one of the following options: 'rock' , 'paper
 
 print("-------------------")
 
+print("USER CHOICE", user_choice)
+
 # VALIDATE INPUTS
 
+if user_choice in ["rock", "paper", "scissors"]:
+    print ("VALID")
+else:
+    print ("INVALID SELECTION. PLEASE TRY AGAIN...")
+    exit()
+
 # GENERATE COMPUTER SELECTION
+
+print("GENERATING...")
 
 # DETERMINE THE WINNER
 
