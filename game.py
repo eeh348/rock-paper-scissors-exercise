@@ -30,5 +30,31 @@ print("COMPUTER CHOICE", computer_choice)
 
 # DETERMINE THE WINNER
 
-# DISPLAY FINAL OUTPUTS / OUTCMOES
+# rock > scissors
+# scissors > paper
+# paper > rock
+# same selection is a tie
 
+#user_choice = "rock"
+#computer_choice = "rock"
+
+if user_choice == computer_choice:
+    print ("Tie!", user_choice, "equals", computer_choice)
+elif user_choice == "rock":
+    if computer_choice == "paper":
+        print ("You lose!", computer_choice, "covers", user_choice)
+    else:
+        print ("You win!", user_choice, "smashes", computer_choice)
+elif user_choice == "paper":
+    if computer_choice == "scissors":
+        print ("You lose!", computer_choice, "cuts",  user_choice)
+    else:
+        print ("You win!", user_choice, "covers", computer_choice)
+elif user_choice == "scissors":
+    if computer_choice == "rock":
+        print ("You lose!", computer_choice, "smashes", user_choice)
+    else: 
+        print ("You win!", user_choice, "cuts",computer_choice)
+
+
+# DISPLAY FINAL OUTPUTS / OUTCMOES
