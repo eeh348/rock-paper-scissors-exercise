@@ -1,7 +1,12 @@
 # game_test.py
 
-from game import determine_winner #determine_winner
+from game import my_message, determine_winner
 
+def test_example():
+    assert 2 == 2
+
+def test_my_message():
+    assert my_message() == "HELLO"
 
 def test_determination_of_the_winner():
     assert determine_winner("rock", "rock") == None # represents a tie
@@ -15,5 +20,3 @@ def test_determination_of_the_winner():
     assert determine_winner("scissors", "rock") == "rock"
     assert determine_winner("scissors", "paper") == "scissors"
     assert determine_winner("scissors", "scissors") == None # represents a tie
-
-
